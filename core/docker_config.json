@@ -143,6 +143,16 @@
          "tag": "0.6.2",
          "params": ""
       },
+      "rasusa":{
+	 "image": "staphb/rasusa",
+	 "tag": "0.1.0",
+	 "params": ""
+      },
+      "flye":{
+	 "image": "staphb/flye",
+	 "tag": "2.5",
+	 "params": ""
+      },
       "cfsan-snp-pipeline": {
          "image": "staphb/cfsan-snp-pipeline",
          "tag": "2.0.2",
