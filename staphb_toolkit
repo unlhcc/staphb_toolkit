@@ -7,11 +7,11 @@
 import sys,os,re
 import argparse
 import json
-import core.calldocker as cd
-import core.sb_programs as sb_prog
-from core.autopath import path_replacer
-from lib.sb_mash_species import MashSpecies
-from lib.sb_cfsan_snp import CFSAN_SNP
+import staphb_toolkit.core.calldocker as cd
+import staphb_toolkit.core.sb_programs as sb_prog
+from staphb_toolkit.core.autopath import path_replacer
+from staphb_toolkit.lib.sb_mash_species import MashSpecies
+from staphb_toolkit.lib.sb_cfsan_snp import CFSAN_SNP
 
 if __name__ == '__main__':
 

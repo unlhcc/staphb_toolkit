@@ -7,8 +7,8 @@ import os,sys
 import psutil
 import shutil
 
-from workflows.dryad.app.lib import getfiles,checkexists
-import core.sb_programs
+from staphb_toolkit.workflows.dryad.app.lib import getfiles,checkexists
+import staphb_toolkit.core.sb_programs
 
 
 #CFSAN SNP pipeline

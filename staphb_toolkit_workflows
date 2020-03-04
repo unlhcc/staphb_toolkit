@@ -6,11 +6,11 @@
 
 import sys,os,re
 import argparse
-import core.calldocker as cd
-import core.sb_programs as sb_prog
-from workflows.tredegar.tredegar import tredegar
-from workflows.foushee.foushee import foushee
-from workflows.dryad.dryad import dryad
+import staphb_toolkit.core.calldocker as cd
+import staphb_toolkit.core.sb_programs as sb_prog
+from staphb_toolkit.workflows.tredegar.tredegar import tredegar
+from staphb_toolkit.workflows.foushee.foushee import foushee
+from staphb_toolkit.workflows.dryad.dryad import dryad
 
 if __name__ == '__main__':
 

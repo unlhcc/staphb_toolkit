@@ -5,8 +5,8 @@
 import os, sys
 
 #local libs
-from workflows.dryad.app.lib import checkexists
-import core.sb_programs
+from staphb_toolkit.workflows.dryad.app.lib import checkexists
+import staphb_toolkit.core.sb_programs
 
 def q_trim(reads,jobs,cpu,outdir,tracker):
     minlength = 100

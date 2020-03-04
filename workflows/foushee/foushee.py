@@ -14,9 +14,9 @@ import datetime
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
 # load staphb libaries
-from workflows.tredegar.tredegar import tredegar
-from core import sb_programs
-from core import fileparser
+from staphb_toolkit.workflows.tredegar.tredegar import tredegar
+from staphb_toolkit.core import sb_programs
+from staphb_toolkit.core import fileparser
 
 
 def group_by_emm(isolate_qual):

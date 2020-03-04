@@ -16,9 +16,9 @@ import xml.etree.ElementTree as ET
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
 # load staphb libaries
-from lib import sb_mash_species
-from core import sb_programs
-from core import fileparser
+from staphb_toolkit.lib import sb_mash_species
+from staphb_toolkit.core import sb_programs
+from staphb_toolkit.core import fileparser
 
 
 # define function for running seqyclean

@@ -10,8 +10,8 @@ import json
 import pathlib
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
-from core import fileparser
-from core import sb_programs
+from staphb_toolkit.core import fileparser
+from staphb_toolkit.core import sb_programs
 
 
 class CFSAN_SNP():

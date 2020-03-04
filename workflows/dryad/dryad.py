@@ -8,11 +8,11 @@ import sys, os
 from shutil import copyfile
 
 #local app libraries
-from workflows.dryad.app.lib import cpu_count, checkexists
-from workflows.dryad.app.lib import StatusTracker as ST
-from workflows.dryad.app.trimming import q_trim
-from workflows.dryad.app.core_genome import core_genome
-from workflows.dryad.app.snp import snp
+from staphb_toolkit.workflows.dryad.app.lib import cpu_count, checkexists
+from staphb_toolkit.workflows.dryad.app.lib import StatusTracker as ST
+from staphb_toolkit.workflows.dryad.app.trimming import q_trim
+from staphb_toolkit.workflows.dryad.app.core_genome import core_genome
+from staphb_toolkit.workflows.dryad.app.snp import snp
 
 #define various pipelines
 def dryad_cg(paired_reads,jobs,cpu_job,outdir,tracker):
