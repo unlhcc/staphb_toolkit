@@ -12,6 +12,7 @@ import pathlib
 import getpass
 import logging
 import xml.etree.ElementTree as ET
+from importlib.resources import path
 
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
@@ -299,7 +300,7 @@ def tredegar(memory, cpus, read_file_path, output_dir="", configuration=""):
         config_file_path = os.path.abspath(configuration)
     else:
         # use default
-        config_file_path = os.path.join(os.path.abspath(os.path.dirname(os.path.realpath(__file__))), "tredegar_config.json")
+        config_file_path = path("staphb_toolkit.workflows.tredegar","tredegar_config.json").__enter__().as_posix()
     # pull in configuration parameters
     with open(config_file_path) as config_file:
         tredegar_config = json.load(config_file)

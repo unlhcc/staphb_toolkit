@@ -9,6 +9,7 @@ import sys
 import json
 import re
 import pathlib
+from importlib.resources import path
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
 from staphb_toolkit.core import fileparser
@@ -22,7 +23,7 @@ class MashSpecies():
         if self.configuration:
             config_file_path = os.path.abspath(configuration)
         else:
-            config_file_path = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))[:-4] + "/core/docker_config.json"
+            config_file_path = path("staphb_toolkit.core","docker_config.json").__enter__().as_posix()
 
         with open(config_file_path, 'r') as config_file:
             self.config = json.load(config_file)

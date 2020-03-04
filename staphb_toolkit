@@ -7,6 +7,7 @@
 import sys,os,re
 import argparse
 import json
+from importlib.resources import path
 import staphb_toolkit.core.calldocker as cd
 import staphb_toolkit.core.sb_programs as sb_prog
 from staphb_toolkit.core.autopath import path_replacer
@@ -74,7 +75,7 @@ if __name__ == '__main__':
     # set the configuration file
     if parser_args[0].configuration == "/core/docker_config.json":
         # use default
-        config_file_path = os.path.abspath(os.path.dirname(os.path.realpath(__file__))) + parser_args[0].configuration
+        config_file_path = path("staphb_toolkit.core","docker_config.json").__enter__().as_posix()
     else:
         config_file_path = os.path.abspath(parser_args[0].configuration)
 

@@ -10,6 +10,7 @@ import sys,os
 import logging
 import getpass
 import datetime
+from importlib.resources import path
 
 sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
@@ -117,7 +118,7 @@ def foushee(memory,cpus,read_file_path,output_dir="",configuration=""):
         config_file_path = os.path.abspath(configuration)
     else:
         #use default
-        config_file_path = os.path.join(os.path.abspath(os.path.dirname(os.path.realpath(__file__))),"foushee_config.json")
+        config_file_path = path("staphb_toolkit.workflows.foushee","foushee_config.json").__enter__().as_posix()
 
     with open(config_file_path, 'r') as config_file:
         foushee_config = json.load(config_file)
